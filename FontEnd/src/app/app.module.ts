@@ -32,7 +32,7 @@ import { SafePipeModule } from 'safe-pipe';
 let config = new AuthServiceConfig([
   {
     id: GoogleLoginProvider.PROVIDER_ID,
-    provider: new GoogleLoginProvider('125307089096-0onp79tfpp4nbkip5hec87m5p38lhqm0.apps.googleusercontent.com')
+    provider: new GoogleLoginProvider('400596709284-adqhd3ouearkvgo6cee5n2gdcq7kbgsk.apps.googleusercontent.com')
   },
   {
     id: FacebookLoginProvider.PROVIDER_ID,
@@ -68,7 +68,7 @@ export function provideConfig() {
     Ng2SearchPipeModule,
     ChartsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyABI0koTdn7S2aqw6qy3tHazY1znvj4_LI',
+      apiKey: 'AIzaSyB9l5MC9tX9oi0t70AXSsIA3LNl8Tbkoio',
       libraries: ['places']
     }),
     NgxImageZoomModule,
