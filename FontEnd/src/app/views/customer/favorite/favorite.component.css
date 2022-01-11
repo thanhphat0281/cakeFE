@@ -262,7 +262,7 @@ ul.post-categories li a,
 .main-menu .vc-mm-mega-cont h4:hover,
 .main-menu .vc-mm-mega-cont h5:hover,
 #bks-products-slider .vc_tta.vc_general li.vc_active a {
-    background-color: #FBEFE2 !important;
+    background-color: #7f462c !important;
     color: #ffffff !important;
 }
 
@@ -279,7 +279,7 @@ div.product .summary .yith-wcwl-add-to-wishlist a:hover,
 .yith-wcwl-wishlistaddedbrowse.show,
 .yith-wcwl-wishlistexistsbrowse.show,
 .catalog-image .yith-wcqv-button {
-    background-color: #229955 !important;
+    background-color: #e7500a !important;
     color: #ffffff !important;
 }
 
@@ -331,7 +331,7 @@ div.product .summary .yith-wcwl-add-to-wishlist a:hover,
 .bks-product-list-wrap .bks-products-list-container li .product-content .amount,
 .slick-dots li.slick-active button:before,
 .product-wrap span.price {
-    color: #FBEFE2!important;
+    color: red !important;
 }
 
 ul.post-categories li a:after {
