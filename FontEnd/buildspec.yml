@@ -14,4 +14,4 @@ phases:
   post_build:
     commands:
       - echo "Updating files in the S3 bucket..."
-      - aws s3 sync dist/testFE/ s3://my-bakery-kltn --delete
+      - aws s3 sync dist/testFE/ s3://my-bakey-ute --delete
