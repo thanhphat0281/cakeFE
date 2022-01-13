@@ -32,7 +32,7 @@ import { SafePipeModule } from 'safe-pipe';
 let config = new AuthServiceConfig([
   {
     id: GoogleLoginProvider.PROVIDER_ID,
-    provider: new GoogleLoginProvider('400596709284-adqhd3ouearkvgo6cee5n2gdcq7kbgsk.apps.googleusercontent.com')
+    provider: new GoogleLoginProvider('718484333750-9q51chmts2ia5l4ch8ivos3dimo3k6al.apps.googleusercontent.com')
   },
   {
     id: FacebookLoginProvider.PROVIDER_ID,
