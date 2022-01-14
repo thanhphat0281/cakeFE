@@ -1,17 +1,30 @@
 version: 0.2
+
 phases:
   install:
-    runtime-versions:
-      nodejs: 12
     commands:
-      - echo "Installing dependencies..."
+      # Update libs
+      - apt-get update
+      # Headless Chrome
+      - apt-get install -y fonts-liberation libasound2 libnspr4 libnss3 libx11-xcb1 xdg-utils libxss1 libappindicator1 libindicator7
+      - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+      - dpkg -i google-chrome*.deb
+  pre_build:
+    commands:
       - npm install
-      - npm install -g @angular/cli@8.3.14
   build:
     commands:
-      - echo "Building Angular project..."
-      - ng build --prod
+      - npm run build:ci
+      - npm run test:ci
   post_build:
     commands:
-      - echo "Updating files in the S3 bucket..."
-      - aws s3 sync dist/testFE/ s3://my-bakey-ute --delete
+      - aws s3 sync ./dist/angular-devops s3://my-bakery-kltn-frontend --acl 'public-read' --delete
+
+artifacts:
+  files:
+    - '**/*.html'
+    - '**/*.js'
+    - '**/*.css'
+    - '**/*.ico'
+  discard-paths: yes
+  base-directory: 'dist/cakeFE'
