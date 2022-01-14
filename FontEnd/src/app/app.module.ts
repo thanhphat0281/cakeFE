@@ -68,7 +68,7 @@ export function provideConfig() {
     Ng2SearchPipeModule,
     ChartsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDyvdtLizgbCo2dz2XY1e4AHLhK7metAwM',
+      apiKey: 'AIzaSyCV4zVVM7kd-Vl4tA-g0hS4zhTEMwRCRr8',
       libraries: ['places']
     }),
     NgxImageZoomModule,
