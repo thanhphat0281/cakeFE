@@ -18,7 +18,7 @@ phases:
       - npm run test:ci
   post_build:
     commands:
-      - aws s3 sync ./dist/angular-devops s3://my-bakery-kltn-frontend --acl 'public-read' --delete
+      - aws s3 sync ./dist/angular-devops s3://mybakeryute --acl 'public-read' --delete
 
 artifacts:
   files:
